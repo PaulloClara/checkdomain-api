@@ -5,6 +5,7 @@
   "repository": "https://github.com/paulloclara/checkdomain-api.git",
   "author": "paulloclara <paulloclara@gmail.com>",
   "license": "MIT",
+  "type": "module",
   "scripts": {
     "start": "node .",
     "dev": "nodemon ."
