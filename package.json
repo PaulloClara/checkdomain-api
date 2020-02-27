@@ -1,0 +1,9 @@
+{
+  "name": "checkdomain-api",
+  "version": "0.0.1",
+  "main": "src",
+  "repository": "https://github.com/paulloclara/checkdomain-api.git",
+  "author": "paulloclara <paulloclara@gmail.com>",
+  "license": "MIT",
+  "scripts": {}
+}
