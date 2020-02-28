@@ -1,26 +1,9 @@
-import { resolve as resolveURL } from "dns";
 import express from "express";
+import routes from "./routes.js";
 
 const server = express();
 
-function checkDomain(url) {
-  return new Promise((resolve, reject) => {
-    resolveURL(url, error => {
-      error ? resolve(false) : resolve(true);
-    });
-  });
-}
-
-server.get("*/:domain", async (request, response) => {
-  const { domain } = request.params;
-
-  const result = !(await checkDomain(domain));
-
-  return response.status(200).send({
-    domain,
-    free: result
-  });
-});
+server.use(routes);
 
 const port = 4000;
 
