@@ -1,5 +1,11 @@
 # CheckDomain API
 
+## Tecs
+
+- Express: Fast, unopinionated, minimalist web framework for node.
+- Cors: Enable CORS with various options.
+- IsValidDomain: Check if the domain is valid.
+
 ### Examples
 
 `/github.com`
