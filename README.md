@@ -39,3 +39,16 @@ CheckDomain is a simple API to check if a domain is valid and available.
   "validDomain": false
 }
 ```
+
+---
+
+#### Links
+
+[Repository](https://github.com/PaulloClara/checkdomain-api) |
+[Heroku](https://api-checkdomain.herokuapp.com)
+
+---
+
+#### License
+
+MIT
