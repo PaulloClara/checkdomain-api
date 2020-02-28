@@ -1,10 +1,24 @@
+import { resolve as resolveURL } from "dns";
 import express from "express";
 
 const server = express();
 
-server.get("/", (request, response) => {
+function checkDomain(url) {
+  return new Promise((resolve, reject) => {
+    resolveURL(url, error => {
+      error ? resolve(false) : resolve(true);
+    });
+  });
+}
+
+server.get("*/:domain", async (request, response) => {
+  const { domain } = request.params;
+
+  const result = !(await checkDomain(domain));
+
   return response.status(200).send({
-    status: "OK"
+    domain,
+    free: result
   });
 });
 
