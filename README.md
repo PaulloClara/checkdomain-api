@@ -1,5 +1,7 @@
 # CheckDomain API
 
+CheckDomain is a simple API to check if a domain is valid and available.
+
 ## Tecs
 
 - Express: Fast, unopinionated, minimalist web framework for node.
