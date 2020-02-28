@@ -13,5 +13,19 @@ module.exports = {
       domain,
       validDomain
     });
+  },
+
+  notFound(request, response) {
+    return response.status(200).send({
+      routes: [
+        {
+          route: "/"
+        },
+        {
+          route: "/<domain>",
+          example: "/github.com"
+        }
+      ]
+    });
   }
 };
