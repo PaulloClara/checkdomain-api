@@ -11,7 +11,8 @@
     "dev": "nodemon ."
   },
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "is-valid-domain": "^0.0.14"
   },
   "devDependencies": {
     "nodemon": "^2.0.2"

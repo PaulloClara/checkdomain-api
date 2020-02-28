@@ -558,6 +558,11 @@ is-stream@^1.0.0, is-stream@^1.1.0:
   resolved "https://registry.yarnpkg.com/is-stream/-/is-stream-1.1.0.tgz#12d4a3dd4e68e0b79ceb8dbc84173ae80d91ca44"
   integrity sha1-EtSj3U5o4Lec6428hBc66A2RykQ=
 
+is-valid-domain@^0.0.14:
+  version "0.0.14"
+  resolved "https://registry.yarnpkg.com/is-valid-domain/-/is-valid-domain-0.0.14.tgz#26f918ed6be2f8554db281efb9f7169d840a6664"
+  integrity sha512-MTUz/3y25zTtutAfwrLyFK+1l2IL4bcq2iHVdYHIPQbvBJLunlYu9dsQdtLwD9HKPDyxCDlKnSbGcRwvjVeCxA==
+
 isexe@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/isexe/-/isexe-2.0.0.tgz#e8fbf374dc556ff8947a10dcb0572d633f2cfa10"
