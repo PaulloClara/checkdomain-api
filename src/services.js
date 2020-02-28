@@ -1,9 +1,11 @@
-import { resolve as resolveURL } from "dns";
+const { resolve: resolveURL } = require("dns");
 
-export function checkDomain(url) {
-  return new Promise((resolve, reject) => {
-    resolveURL(url, error => {
-      error ? resolve(false) : resolve(true);
+module.exports = {
+  checkDomain(url) {
+    return new Promise((resolve, reject) => {
+      resolveURL(url, error => {
+        error ? resolve(false) : resolve(true);
+      });
     });
-  });
-}
+  }
+};

@@ -1,12 +1,8 @@
-import cors from "cors";
-import express from "express";
-
-import routes from "./routes.js";
-
-const server = express();
+const cors = require("cors");
+const server = require("express")();
 
 server.use(cors());
-server.use(routes);
+server.use(require("./routes"));
 
 const port = process.env.PORT || 4000;
 

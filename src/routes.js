@@ -1,8 +1,6 @@
-import express from "express";
-import { root as rootController } from "./controllers.js";
-
-const router = express.Router();
+const router = require("express").Router();
+const { root: rootController } = require("./controllers");
 
 router.get("*/:domain", rootController);
 
-export default router;
+module.exports = router;
